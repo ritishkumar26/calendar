@@ -1,0 +1,10 @@
+  var a = (currentyr - 1)/ 4;
+  var b = (currentyr - 1)/ 100;
+  var c = (currentyr - 1)/ 400;
+  var daystart = (currentyr + a - b + c)%7;
+
+this is the concept to calculate the day start  with the help of currentyr 
+
+ i  am trying to make calendar without using date object  
+
+ one thing is missing  :-i don't set the date accordingly to days .
