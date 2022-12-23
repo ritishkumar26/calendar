@@ -79,7 +79,7 @@ text-align: center;
    
 }
 .calendar {
- height: 330px; 
+ height: 300px; 
 }
 }
 @media screen and (max-width: 397px){
@@ -90,7 +90,7 @@ text-align: center;
     width: 25px;
 }
 .calendar {
-  height: 240px; 
+  height: 260px; 
  }
  }
 
