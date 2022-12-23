@@ -9,6 +9,11 @@
   align-items: center;
   height: 100vh;
 }
+.icons button{
+  background: none;
+ border: none;
+  
+}
 .calendar {
   background: #fff;
   padding: 25px;
@@ -36,8 +41,9 @@
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: white;
+  background-color: #f6c268;
   border-radius: 50px;
+  
 }
 .icons .icon p{
   font-size: 20px;
@@ -49,7 +55,7 @@
   text-align: center;
 }
 .icon:hover{
-  background-color: rgba(51, 51, 51, 0.489);
+  background-image:linear-gradient(150deg,#f6c268,#c3ee60);
 }
 
 table {
