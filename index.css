@@ -1,141 +1,112 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .wrapper{
-  background-image:linear-gradient(150deg,#f6c268,#c3ee60);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+background-image:linear-gradient(150deg,#f6c268,#c3ee60);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
 }
 .icons button{
-  background: none;
- border: none;
-  
+background: none;
+border: none;
+
 }
 .calendar {
-  background: #fff;
-  padding: 25px;
-  border-radius: 5px;
-  box-shadow: 0px 40px 30px -20px  rgba(0, 0, 0, 0.3);
-
-  color: rgb(59, 59, 59);
-  margin: auto;
+background: #fff;
+padding: 25px;
+border-radius: 5px;
+box-shadow: 0px 40px 30px -20px  rgba(0, 0, 0, 0.3);
+height: 500px;
+color: rgb(59, 59, 59);
+margin: auto;
 }
 .header-calendar{
-  position: relative;
+position: relative;
 }
 .icons{
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+display: flex;
+position: absolute;
+justify-content: space-between;
+width: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
 }
 .icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #f6c268;
-  border-radius: 50px;
-  
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+background-color: #f6c268;
+border-radius: 50px;
+
 }
 .icons .icon p{
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  text-shadow: 2px 2px -5px rgba(0, 0, 0, 0.3) ;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+text-shadow: 2px 2px -5px rgba(0, 0, 0, 0.3) ;
 }
 .header-calendar{
-  text-align: center;
-}
-.icon:hover{
-  background-image:linear-gradient(150deg,#f6c268,#c3ee60);
-}
-
-table {
-  box-sizing: border-box;
-  margin: auto;
-}
-table tr:first-child{
-  font-size: 25px;
-  font-weight: bold;
-  margin: 5px 0px 25px 0px;
-}
-table tr td{
-  padding: 20px 20px;
-  font-size: 18px;
-  font-weight: 700;
-  width: 25px;
 text-align: center;
 }
- table tr td:hover{
-  border-radius: 30px;
-  background-color: #c8f859;
+.icon:hover{
+background-image:linear-gradient(150deg,#f6c268,#c3ee60);
 }
-@media screen and (max-width: 500px) {
-  
-  table tr:first-child{
-    font-size: 15px;
-    font-weight: bold;
-    margin: 5px 0px 10px 0px;
-  }
-  table tr td{
-    padding: 15px 15px;
-    font-size: 14px;
-   
-    width: 15px;
 
-  }
-   table tr td:hover{
-    border-radius: 25px;
-  
-  }
-  .icon{
-   
-    width: 40px;
-    height: 40px;
+.grid{
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto;
 
-    border-radius: 40px;
-  }
 }
-@media screen and (max-width: 380px) {
-  
-  table tr:first-child{
-    font-size: 12px;
-    font-weight: bold;
-    margin: 5px 0px 7px 0px;
-  }
-  table tr td{
+.days{
+padding: 20px 20px;
+font-size: 18px;
+font-weight: 700;
+width: 25px;
+text-align: center;
+}
+@media screen and (max-width: 561px){
+  .days {
     padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 25px;
+   
+}
+.calendar {
+ height: 300px; 
+}
+}
+@media screen and (max-width: 397px){
+  .days {
+    padding: 7px 7px;
     font-size: 12px;
-   
-    width: 15px;
+    font-weight: 700;
+    width: 25px;
+}
+.calendar {
+  height: 240px; 
+ }
+ }
 
-  }
-   table tr td:hover{
-    border-radius: 15px;
-  
-  }
-  .icon{
-   
-    width: 30px;
-    height: 30px;
-
-    border-radius: 30px;
-  }
-  .calendar {
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 40px 30px -20px  rgba(0, 0, 0, 0.3);
-  
-    color: rgb(59, 59, 59);
-    margin: auto;
-  }
+@media screen and (max-width: 320px){
+  .days {
+    padding: 7px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 25px;
+}
+.calendar {
+  padding: 10px; 
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
 }
